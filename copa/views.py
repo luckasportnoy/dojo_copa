@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def listaJogo(request):
+	return render(request, 'copa.html')

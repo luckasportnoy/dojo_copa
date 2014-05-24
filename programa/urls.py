@@ -6,5 +6,5 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^jogos/$', ),
+    url(r'^$','copa.views.index'),
 )
