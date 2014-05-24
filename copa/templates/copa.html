@@ -1,1 +1,21 @@
-teste
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="POST" action="/salvar/">{%csrf_token%}
+<input type="text" name="time1" value="">
+<input type="text" name="score1" value="">X
+<input type="text" name="score2" value="">
+<input type="text" name="time2" value="">
+ <br>
+ <input type="submit" value="Salvar" name='salvar'>
+
+</form>
+
+{% for item in jogo%}
+{{item.time1}} {{item.score1}} x {{item.score2}} {{item.time2}} <br>
+{% endfor%}
+</body>
+</html>
